@@ -15,7 +15,7 @@ router.get("/donations", (req, res) => {
 
 router.post("/donations", (req, res) => {
   const dona = req.body;
-  Donation.insertMany(dona).then(() => {
+  Donation.create(dona).then(() => {
     return res.json({
       success: true,
       message: "Donated successfully.",

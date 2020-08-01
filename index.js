@@ -18,7 +18,7 @@ app.get("/url", (req, res, next) => {
   res.json(["Tony", "Lisa", "Michael", "Ginger", "Food"]);
 });
 
-port = 3000;
+port = 3300;
 app.listen(port, () => {
   console.log("Server running on port " + port);
 });
