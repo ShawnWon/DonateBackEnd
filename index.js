@@ -14,7 +14,11 @@ app.use(cors());
 
 app.use("/", busstop);
 app.use("/", donation);
+app.get("/url", (req, res, next) => {
+  res.json(["Tony", "Lisa", "Michael", "Ginger", "Food"]);
+});
 
-app.listen(3300, () => {
-  console.log("Server running on port 3000");
+port = 3000;
+app.listen(port, () => {
+  console.log("Server running on port " + port);
 });
